@@ -26,11 +26,10 @@ class Phone {
     }
 
     void receiveCall(String name) {
-        System.out.println("Вам звонит " + name);
+        receiveCall(name, 0);
     }
 
     void receiveCall(String name, long number) {
-        receiveCall(name);
-        System.out.println("Номер: " + number);
+        System.out.println("Вам звонит: " + name + (number == 0 ? " " : (" Номер: " + number)));
     }
 }
